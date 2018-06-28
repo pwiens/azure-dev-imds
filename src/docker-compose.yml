@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  imdsapi:
+    image: ${DOCKER_REGISTRY}imdsapi
+    build:
+      context: .
+      dockerfile: ImdsApi\Dockerfile
