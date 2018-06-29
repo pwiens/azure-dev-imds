@@ -6,6 +6,8 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
     ports:
       - "80"
+    volumes:
+      - ${USERPROFILE}/.Azure:C:\Users\ContainerUser\.Azure:rw
 
 networks:
   default:
